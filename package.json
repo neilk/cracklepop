@@ -2,8 +2,8 @@
   "name": "cracklepop",
   "version": "1.0.0",
   "description": "Recurse center code demo",
-  "main": "index.js",
   "scripts": {
+    "start": "node cracklepop.js",
     "test": "npx mocha test"
   },
   "repository": {
