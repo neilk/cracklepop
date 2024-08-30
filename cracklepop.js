@@ -1,17 +1,17 @@
 [...Array(101).keys()]
     .splice(1)
     .map(n =>
-        [[5, 'Pop'], [3, 'Crackle']]
+        [[3, 'Crackle'], [5, 'Pop']]
             .map(([modulus, label]) =>
                 ([n, display]) => [
                     n,
                     n % modulus
                         ? display
                         : isNaN(display)
-                            ? label + display
+                            ? display + label
                             : label
                 ]
             )
-            .reduce((item, fn) => fn(item), [n, n])
+            .reduce((pair, fn) => fn(pair), [n, n])
     )
     .forEach(([_, display]) => console.log(display.toString()));
