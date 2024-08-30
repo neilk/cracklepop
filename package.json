@@ -1,0 +1,22 @@
+{
+  "name": "cracklepop",
+  "version": "1.0.0",
+  "description": "Recurse center code demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neilk/cracklepop.git"
+  },
+  "author": "Neil Kandalgaonkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neilk/cracklepop/issues"
+  },
+  "homepage": "https://github.com/neilk/cracklepop#readme",
+  "dependencies": {
+    "mocha": "^10.7.3"
+  }
+}
