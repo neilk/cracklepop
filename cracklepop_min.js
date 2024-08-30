@@ -1,1 +1,1 @@
-[...Array(101).keys()].splice(1).map((n=>[[5,"Pop"],[3,"Crackle"]].map((([m,l])=>([n,d])=>[n,n%m?d:isNaN(d)?l+d:l])).reduce(((y,f)=>f(y)),[n,n.toString()]))).forEach((p=>console.log(p[1])));
+[...Array(101).keys()].splice(1).map((n=>[[5,"Pop"],[3,"Crackle"]].map((([m,l])=>([n,d])=>[n,n%m?d:isNaN(d)?l+d:l])).reduce(((y,f)=>f(y)),[n,n]))).forEach((p=>console.log(p[1].toString())));

@@ -12,6 +12,6 @@
                             : label
                 ]
             )
-            .reduce((item, fn) => fn(item), [n, n.toString()])
+            .reduce((item, fn) => fn(item), [n, n])
     )
-    .forEach(([_, display]) => console.log(display));
+    .forEach(([_, display]) => console.log(display.toString()));
