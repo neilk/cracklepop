@@ -3,12 +3,12 @@
 
 // Capture which node executable we are running
 const nodeExecutable = process.execPath;
-const { execSync } = require('child_process');
+const { execFileSync } = require('child_process');
 
 const assert = require('assert');
 
 describe('CracklePop', function () {
-    const result = execSync(`${nodeExecutable} cracklepop.js`).toString();
+    const result = execFileSync(nodeExecutable, ['cracklepop.js']).toString();
     const resultLines = result.split('\n');
     // remove the last item of resultLines, which is an empty string
     resultLines.pop();
