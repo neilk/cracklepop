@@ -1,7 +1,6 @@
 [...Array(101).keys()]
     .splice(1)
-    .map(index => [index, index])
-    .map(pair =>
+    .map(n =>
         [[5, 'Pop'], [3, 'Crackle']]
             .map(([modulus, label]) =>
                 ([index, display]) => [
@@ -13,6 +12,6 @@
                             : label
                 ]
             )
-            .reduce((item, fn) => fn(item), pair)
+            .reduce((item, fn) => fn(item), [n, n])
     )
-    .forEach(pair => console.log(pair[1]));
+    .forEach(([_, display]) => console.log(display));
