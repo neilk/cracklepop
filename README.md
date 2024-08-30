@@ -28,7 +28,7 @@ Yes, it's a joke. I hope you like it?
 
 ## How it works
 
-We first obtain a list of numbers from 1 to 100 with a standard trick, getting keys from an `Array` of predefined length. We use splice to drop the initial 0. 
+We first obtain a list of numbers from 1 to 100 with a standard trick, getting keys from an `Array` of predefined length. We use splice to drop the initial `0`. 
 
 For each of those numbers, we then make a pair, like `[3, 3]`.
 
