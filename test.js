@@ -2,7 +2,7 @@
 // Usage: mocha test.js
 
 // Capture which node executable we are running
-const nodeExecutable = process.argv[0];
+const nodeExecutable = process.execPath;
 const { execSync } = require('child_process');
 
 const assert = require('assert');
@@ -31,5 +31,5 @@ describe('CracklePop', function () {
             assert.strictEqual(resultLines[i], expected);
         }
     });
-    
+
 });
