@@ -4,13 +4,15 @@ For my Recurse Center application, 2024-08-30
 
 ## How to run it
 
-This has been tested with Node.js v20.14.0, but probably works in earlier versions.
+This requires Node.js. The main script should run correctly with any `node` greater than version 8
 
 ```
 > node cracklepop.js
 ```
 
 ## Run the tests
+
+The tests are only guaranteed to work with the current version of node, `v20.14.0`.
 
 If you haven't already, use `npm install`. This just installs `mocha`.
 
