@@ -4,7 +4,7 @@ For my Recurse Center application, 2024-08-30
 
 ## How to run it
 
-This requires Node.js. The main script should run correctly with any `node` greater than version 8
+This requires Node.js. The main script should run correctly with any `node` more recent than version 8.
 
 ```
 node cracklepop.js
@@ -33,6 +33,12 @@ We first obtain a list of numbers from 1 to 100 with a standard trick, getting k
 For each of those numbers, we then make a pair, like `[3, 3]`.
 
 We then define two similar functions, which will get the modulus of the first pair item versus 3 and 5, respectively. If it's a number, replaces it with `Crackle` or `Pop`. If it's a string, it appends that label instead, so if both conditions were true, we get `CracklePop`.
+
+We then `map` over all the numbers, and `reduce` both those functions over each pair. The result is a list of pairs like `[3, 'Crackle'], [4, 4], [5, 'Pop'], [6, 6] ... [15, 'CracklePop']`.
+
+Then, for each of those pairs, we print the second item. 
+
+We ensure we are printing a string because in the terminal or in a browser, `console` often applies special styling to numbers.
 
 ## Social media virality optimization
 
