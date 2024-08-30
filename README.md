@@ -7,7 +7,7 @@ For my Recurse Center application, 2024-08-30
 This requires Node.js. The main script should run correctly with any `node` greater than version 8
 
 ```
-> node cracklepop.js
+node cracklepop.js
 ```
 
 ## Run the tests
@@ -17,7 +17,7 @@ The tests are only guaranteed to work with the current version of node, `v20.14.
 If you haven't already, use `npm install`. This just installs `mocha`.
 
 ```
-> npm run test
+npm run test
 ```
 
 ## About the solution
