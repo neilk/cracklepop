@@ -12,11 +12,11 @@ describe('CracklePop', function () {
     const resultLines = result.split('\n');
     // remove the last item of resultLines, which is an empty string
     resultLines.pop();
-    console.dir(resultLines, {depth: null});
 
     it('should print 100 lines', function () {
         assert.strictEqual(resultLines.length, 100);
     });
+
     it('should print expected results for each line', function () {
         for (let i = 0; i <= 99; i++) {
             let n = i + 1;
@@ -31,4 +31,5 @@ describe('CracklePop', function () {
             assert.strictEqual(resultLines[i], expected);
         }
     });
+    
 });
