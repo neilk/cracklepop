@@ -3,15 +3,15 @@
     .map(n =>
         [[5, 'Pop'], [3, 'Crackle']]
             .map(([modulus, label]) =>
-                ([index, display]) => [
-                    index,
-                    index % modulus
+                ([n, display]) => [
+                    n,
+                    n % modulus
                         ? display
                         : isNaN(display)
                             ? label + display
                             : label
                 ]
             )
-            .reduce((item, fn) => fn(item), [n, n])
+            .reduce((item, fn) => fn(item), [n, n.toString()])
     )
     .forEach(([_, display]) => console.log(display));
