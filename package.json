@@ -4,7 +4,7 @@
   "description": "Recurse center code demo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "npx mocha test"
   },
   "repository": {
     "type": "git",
