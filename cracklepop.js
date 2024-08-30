@@ -14,4 +14,4 @@
             )
             .reduce((pair, fn) => fn(pair), [n, n])
     )
-    .forEach(([_, display]) => console.log(display.toString()));
+    .forEach((pair) => console.log(pair[1].toString()));
